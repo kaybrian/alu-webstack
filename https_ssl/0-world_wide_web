@@ -16,3 +16,4 @@ for sub in ${SUB_DOMAINS[@]}; do
     destination=$(dig +short "$sub.$domain" | awk '{print $1}')
     echo "The subdomain $sub is a $record_type record and points to $destination"
 done
+ 
